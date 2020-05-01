@@ -47,7 +47,7 @@
    yarn run src.CoreModule.BaseButton
    ```
 
-   The `BaseButton` module will be generated at root `src` directory like following.
+   The `BaseButton` module will be generated at your project root `src` directory like following.
 
    ```
    │── src
