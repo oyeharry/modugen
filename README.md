@@ -5,6 +5,6 @@
 ## Getting Started
 
 1. Create your first module template <br>
-   touch `templates/src/CoreModule.[pascalCase].js`
+   touch `templates/CoreModule.[pascalCase].js`
 
-2. `npx modugen src.BaseButton`
+2. `npx modugen CoreModule.BaseButton`
