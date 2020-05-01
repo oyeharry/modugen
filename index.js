@@ -29,13 +29,11 @@ const caseConvertorMap = {
   hyphenatedCase: (val) => decamelize(val, '-'),
   dashCase: (val) => decamelize(val, '-'),
   kebabCase: (val) => decamelize(val, '-'),
-  underscoredCase: (val) => decamelize(val, '_'),
   snakeCase: (val) => decamelize(val, '_'),
   dotCase: (val) => decamelize(val, '.'),
   constantCase: (val) => decamelize(val, '_').toUpperCase(),
   lowerCase: (val) => decamelize(val, ' '),
   titleCase: (val) => titleize(decamelize(val, ' ')),
-  sentenceCase: (val) => titleize(decamelize(val, ' ')),
 };
 
 const getTemplateNameCases = (templateName) => {

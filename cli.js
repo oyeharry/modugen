@@ -6,14 +6,20 @@ const modugen = require('.');
 const cli = meow(
   `
 	Usage
-	  $ modugen <command>
+	  $ modugen <path-to-template>.<module-name>
 	Options
 		--cwd current working directory
 		--templateFilesDir templates directory to look for. Default is ./templates
 		--destPath destination directory for output.
-	Examples
-		Create a module.
-		$ modugen BaseButton
+  Examples
+  Look for template file name starting with 'CoreModule' inside 'templates/' and generate BaseButton module.
+  $ modugen CoreModule.BaseButton
+
+  Look for template file name starting with 'CoreModule' inside 'templates/src/' and generate BaseButton module.
+  $ modugen src.CoreModule.BaseButton
+
+  Look for template file name starting with 'PageModule' inside 'templates/src/pages' and generate HomePage module at 'src/pages/'.
+  $ modugen src.pages.PageModule.HomePage
 `,
   {
     flags: {
