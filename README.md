@@ -4,10 +4,9 @@
 
 ## Getting Started
 
-1. Create a template file at your project root in following path.
-   `templates/CoreModule.[pascalCase].js`
+1. Create a template file at your project root like this `templates/CoreModule.[pascalCase].js`
 
-2) Add some template code in your template file.
+2. Add some template code in your template file.
 
 ```javascript
 import React from 'react';
@@ -21,7 +20,7 @@ export default ${pascalCase};
 
 3. Execute following command and your `BaseButton.js` module will be generated at your root.
 
-```
+```bash
 npx modugen CoreModule.BaseButton
 ```
 
