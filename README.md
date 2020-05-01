@@ -27,6 +27,14 @@
    yarn run modugen CoreModule.BaseButton
    ```
 
+## Install Globally
+
+Install modugen globally for easy access.
+
+```
+npm i modugen -g
+```
+
 ## Generating module directory
 
 1. Create a module template directory structure like the following. Now your CoreModule template directory is inside src directory including all the related files.
@@ -44,7 +52,7 @@
 2. Run following command to generate `BaseButton` module.
 
    ```
-   yarn run src.CoreModule.BaseButton
+    modugen src.CoreModule.BaseButton
    ```
 
    The `BaseButton` module will be generated at your project root `src` directory like following.
