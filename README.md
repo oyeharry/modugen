@@ -1,4 +1,4 @@
-# modugen [![Build Status](https://github.com/oyeharry/modugen/workflows/modugen-master/badge.svg)](https://github.com/oyeharry/modugen/actions?query=workflow%3Amodugen-master)
+# modugen [![Build Status](https://github.com/oyeharry/modugen/workflows/modugen-master/badge.svg?branch=master)](https://github.com/oyeharry/modugen/actions?query=workflow%3Amodugen-master)
 
 > Simple micro generator for simple needs!
 
