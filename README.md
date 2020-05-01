@@ -4,7 +4,27 @@
 
 ## Getting Started
 
-1. Create your first module template like following <br>
+1. Create a template file at your project root in following path.
    `templates/CoreModule.[pascalCase].js`
 
-2. `npx modugen CoreModule.BaseButton`
+2) Add some template code in your template file.
+
+```javascript
+import React from 'react';
+
+function ${pascalCase}(props) {
+    return <button>My Button</button>;
+}
+
+export default ${pascalCase};
+```
+
+3. Execute following command and your `BaseButton.js` module will be generated at your root.
+
+```
+npx modugen CoreModule.BaseButton
+```
+
+## License
+
+MIT ©
