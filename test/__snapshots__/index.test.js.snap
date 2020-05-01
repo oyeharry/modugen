@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Verify module generation with moduleName file and directory 1`] = `
+"// @flow
+import React from 'react';
+import PropTypes from 'prop-types';
+
+type Props = {
+  label?: string,
+  onClick?: Function,
+};
+
+function BaseButton(props) {
+  return <button>My Button</button>;
+}
+
+export default BaseButton;
+"
+`;
+
+exports[`Verify module generation with moduleName file and directory 2`] = `
+"import React from 'react';
+import PropTypes from 'prop-types';
+
+const baseButton = props => {
+  return <button>My Button</button>;
+};
+
+export default baseButton;
+"
+`;
+
+exports[`Verify module generation with moduleName file and directory 3`] = `
+"import BaseButton from 'BaseButton';
+
+test('verify BaseButton component', () => {});
+"
+`;
+
+exports[`Verify module generation with moduleName file and directory 4`] = `
+"export { default } from './BaseButton';
+"
+`;
+
+exports[`Verify module generation with moduleName file and directory 5`] = `
+"## Following are case formats
+
+BaseButton
+BaseButton
+baseButton
+base-button
+base-button
+base-button
+base_button
+base_button
+base.button
+BASE_BUTTON
+base button
+Base Button
+Base Button
+"
+`;
+
+exports[`Verify module generation with moduleName file and directory 6`] = `
+"#1 This is BaseButton Todo 1
+#2 This is BaseButton Todo 2
+"
+`;
+
+exports[`Verify module generation without moduleName directory 1`] = `
+"import React from 'react';
+import PropTypes from 'prop-types';
+
+function Button(props) {
+  return <button>My Button</button>;
+}
+
+export default Button;
+"
+`;
+
+exports[`Verify module generation without moduleName directory 2`] = `
+"import Button from 'Button';
+
+test('verify Button component', () => {});
+"
+`;
+
+exports[`Verify module generation without moduleName directory 3`] = `
+"export { default } from './Button';
+"
+`;

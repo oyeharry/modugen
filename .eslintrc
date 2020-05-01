@@ -1,0 +1,45 @@
+{
+  "rules": {
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [2, "single"],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "no-alert": 2,
+    "camelcase": 2,
+    "no-extend-native": 2,
+    "brace-style": [
+      1,
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ]
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "describe": true,
+    "expect": true,
+    "it": true,
+    "jest": true,
+    "window": true,
+    "beforeAll": true,
+    "__DEV__": true
+  },
+  "plugins": ["jest", "prettier"],
+  "extends": ["eslint:recommended", "prettier"]
+}
