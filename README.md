@@ -8,15 +8,15 @@
 
 2. Add some template code in your template file.
 
-```javascript
-import React from 'react';
+   ```javascript
+   import React from 'react';
 
-function ${pascalCase}(props) {
-    return <button>My Button</button>;
-}
+   function ${pascalCase}(props) {
+       return <button>My Button</button>;
+   }
 
-export default ${pascalCase};
-```
+   export default ${pascalCase};
+   ```
 
 3. Execute following command and your `BaseButton.js` module will be generated at your root.
 
