@@ -10,13 +10,13 @@
    yarn add modugen --dev
    ```
 
-2. Create `templates/CoreModule.[pascalCase].js` file at root of you project. `templates` directory is the default home for your all module templates.
+2. Create `templates/CoreModule.[pascalCase].js` file at root of your project. `templates` directory is the default home for your all module templates.
 
    ```javascript
    import React from 'react';
 
    function ${pascalCase}(props) {
-       return <button>My Button</button>;
+       return <button>${titleCase}</button>;
    }
 
    export default ${pascalCase};
