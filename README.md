@@ -29,7 +29,7 @@
 
 ## Generating module directory
 
-1. Create a module template directory structure like the following. Your CoreModule template directory is inside src directory now including all related files.
+1. Create a module template directory structure like the following. Now your CoreModule template directory is inside src directory including all related files.
 
    ```
    ├── templates
