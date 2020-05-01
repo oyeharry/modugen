@@ -29,7 +29,7 @@
 
 ## Creating module template directory
 
-1. Create a module template like the following. Your CoreModule template directory is inside src directory now including all related files.
+1. Create a module template directory structure like the following. Your CoreModule template directory is inside src directory now including all related files.
 
    ```
    ├── templates
@@ -47,7 +47,16 @@
    yarn run src.CoreModule.BaseButton
    ```
 
-   The `BaseButton` module will be generated at `src/base-button`
+   The `BaseButton` module will be generated at root `src` directory like following.
+
+   ```
+   │── src
+   │   └── base-button
+   │       ├── baseButton.todo
+   │       ├── BaseButton.jsx
+   │       ├── BaseButton.test.js
+   │       └── index.js
+   ```
 
 ## Supported Case Formats
 
@@ -118,11 +127,3 @@ Output destination.
 ## License
 
 MIT ©
-
-```
-
-```
-
-```
-
-```
