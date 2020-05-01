@@ -1,15 +1,13 @@
 ## Following are case formats
 
 ${pascalCase} 
-${properCase} 
+${properCase}
 ${camelCase} 
-${hyphenatedCase} 
+${hyphenatedCase}
 ${dashCase} 
-${kebabCase} 
-${underscoredCase} 
-${snakeCase} 
-${dotCase} 
-${constantCase} 
-${lowerCase} 
-${titleCase} 
-${sentenceCase} 
+${kebabCase}
+${snakeCase}
+${dotCase}
+${constantCase}
+${lowerCase}
+${titleCase}
