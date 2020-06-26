@@ -1,6 +1,6 @@
 {
   "name": "modugen",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "description": "Simple micro generator for simple needs!",
   "main": "index.js",
   "bin": {
