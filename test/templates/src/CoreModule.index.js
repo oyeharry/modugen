@@ -1,1 +1,1 @@
-export { default } from './${pascalCase}';
+export { default } from './$[pascalCase]';

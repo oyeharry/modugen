@@ -15,11 +15,11 @@
    ```javascript
    import React from 'react';
 
-   function ${pascalCase}(props) {
-       return <button>${titleCase}</button>;
+   function $[pascalCase](props) {
+       return <button>$[titleCase]</button>;
    }
 
-   export default ${pascalCase};
+   export default $[pascalCase];
    ```
 
 3. Execute following command and your `BaseButton.js` module will be generated at your project root.

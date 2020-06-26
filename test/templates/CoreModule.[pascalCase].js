@@ -7,8 +7,8 @@ type Props = {
   onClick?: Function,
 };
 
-function ${pascalCase}(props) {
+function $[pascalCase](props) {
     return <button>My Button</button>;
 }
     
-export default ${pascalCase};
+export default $[pascalCase];

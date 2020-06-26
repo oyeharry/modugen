@@ -23,27 +23,27 @@ const prettierSupportExts = [
 ];
 
 const caseConvertorMap = {
-  pascalCase: (val) => camelcase(val, { pascalCase: true }),
-  properCase: (val) => camelcase(val, { pascalCase: true }),
-  camelCase: (val) => camelcase(val),
-  hyphenatedCase: (val) => decamelize(val, '-'),
-  dashCase: (val) => decamelize(val, '-'),
-  kebabCase: (val) => decamelize(val, '-'),
-  snakeCase: (val) => decamelize(val, '_'),
-  dotCase: (val) => decamelize(val, '.'),
-  constantCase: (val) => decamelize(val, '_').toUpperCase(),
-  lowerCase: (val) => decamelize(val, ' '),
-  titleCase: (val) => titleize(decamelize(val, ' ')),
+  pascalCase: val => camelcase(val, { pascalCase: true }),
+  properCase: val => camelcase(val, { pascalCase: true }),
+  camelCase: val => camelcase(val),
+  hyphenatedCase: val => decamelize(val, '-'),
+  dashCase: val => decamelize(val, '-'),
+  kebabCase: val => decamelize(val, '-'),
+  snakeCase: val => decamelize(val, '_'),
+  dotCase: val => decamelize(val, '.'),
+  constantCase: val => decamelize(val, '_').toUpperCase(),
+  lowerCase: val => decamelize(val, ' '),
+  titleCase: val => titleize(decamelize(val, ' ')),
 };
 
-const getTemplateNameCases = (templateName) => {
+const getTemplateNameCases = templateName => {
   return Object.keys(caseConvertorMap).reduce((result, key) => {
     result[key] = caseConvertorMap[key](templateName);
     return result;
   }, {});
 };
 
-const getConfig = (config) => {
+const getConfig = config => {
   const defaultOptions = {
     cwd: process.cwd(),
     templateFilesDir: './templates',
@@ -53,7 +53,7 @@ const getConfig = (config) => {
 };
 
 const parseTemplateString = (template, data) => {
-  const braceRegex = /\${(.*?)}/g;
+  const braceRegex = /\$\[(.*?)\]/g;
 
   return template.replace(braceRegex, (_, key) => {
     let result = data;
@@ -95,7 +95,7 @@ module.exports = async (templateCommand, config) => {
   };
 
   const templateFileContentData = getTemplateNameCases(templateName);
-  const fileWrites = filePaths.map(async (filePath) => {
+  const fileWrites = filePaths.map(async filePath => {
     const parsedFilePath = filePath
       .replace(/\[(.*?)\]/g, fileNameReplacer)
       .replace(new RegExp(`${templateFileName}\\.`, 'g'), '');

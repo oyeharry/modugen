@@ -1,5 +1,5 @@
-import ${pascalCase} from '${pascalCase}';
+import $[pascalCase] from '$[pascalCase]';
 
-test('verify ${pascalCase} component', () => {
+test('verify $[pascalCase] component', () => {
         
 });
