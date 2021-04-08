@@ -72,7 +72,7 @@ module.exports = async (templateCommand, config) => {
   const templateFileName = templateCommandSplit.pop();
   const templateDirPath = templateCommandSplit.join('/');
   const templateDirName = templateCommandSplit.length
-    ? `${templateCommandSplit.join('.')}/`
+    ? `${templateCommandSplit.join('/')}/`
     : '';
   const templateMatch = `${templateDirName}${templateFileName}`;
 
