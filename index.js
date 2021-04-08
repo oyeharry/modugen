@@ -78,12 +78,9 @@ module.exports = async (templateCommand, config) => {
 
   const { cwd, templateFilesDir, destPath } = getConfig(config);
 
-  const filePaths = await globby(
-    [`${templateMatch}*`, `${templateMatch}*/**`],
-    {
-      cwd: path.resolve(path.join(cwd, templateFilesDir)),
-    }
-  );
+  const filePaths = await globby([`${templateMatch}(*)/**`], {
+    cwd: path.resolve(path.join(cwd, templateFilesDir)),
+  });
 
   const fileNameReplacer = (_, key) => {
     const caseConvertor = caseConvertorMap[key];
